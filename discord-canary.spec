@@ -7,9 +7,9 @@
 
 Name:           discord-canary
 # Version managed by tito
-Version:        0.0.0
+Version:        0.0.536
 # Release managed by tito
-Release:        0%{?dist}
+Release:        1
 Summary:        All-in-one voice and text chat
 
 # License Information: https://bugzilla.rpmfusion.org/show_bug.cgi?id=4441#c14
@@ -89,3 +89,6 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.metain
 
 
 %changelog
+* Sun Dec 08 2024 garzj <johannes@garz.dev> 0.0.536-1
+- Fork https://github.com/rpmfusion/discord/tree/master, adapt for Discord Canary
+- Initial build at version 0.0.536
