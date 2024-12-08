@@ -15,7 +15,7 @@ Summary:        All-in-one voice and text chat
 # License Information: https://bugzilla.rpmfusion.org/show_bug.cgi?id=4441#c14
 License:        Proprietary
 URL:            https://discordapp.com/
-Source0:        https://canary.dl2.discordapp.net/apps/linux/%{version}/%{name}-%{version}.tar.gz
+Source0:        https://canary.dl2.discordapp.net/apps/linux/%{version}/%{name}-%{version}.tar.gz#/discord-canary.tar.gz
 # Adapted from https://raw.githubusercontent.com/flathub/com.discordapp.Discord/master/com.discordapp.Discord.appdata.xml
 Source1:        discord-canary.metainfo.xml
 Source2:        wrapper.sh
