@@ -18,8 +18,8 @@ XDG_CONFIG_HOME = os.environ.get("XDG_CONFIG_HOME") or os.path.join(
     os.path.expanduser("~"), ".config"
 )
 
-settings_path = Path(f"{XDG_CONFIG_HOME}/discord/settings.json")
-settings_path_temp = Path(f"{XDG_CONFIG_HOME}/discord/settings.json.tmp")
+settings_path = Path(f"{XDG_CONFIG_HOME}/discordcanary/settings.json")
+settings_path_temp = Path(f"{XDG_CONFIG_HOME}/discordcanary/settings.json.tmp")
 try:
     with settings_path.open() as settings_file:
         settings = json.load(settings_file)

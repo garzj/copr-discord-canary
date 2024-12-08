@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
-# Path to discord binary
-DISCORD_BIN=$(dirname $(readlink -f $0))/Discord
+# Path to discord canary binary
+DISCORD_BIN=$(dirname $(readlink -f $0))/DiscordCanary
 
 # Run python script to disable check updates
 /usr/lib64/discord/disable-breaking-updates.py
