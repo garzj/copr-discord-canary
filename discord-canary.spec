@@ -3,7 +3,7 @@
 %global         __requires_exclude libffmpeg.so
 %global         _build_id_links none
 ###############################Exclude Private bundled libs###########################
-%global __provides_exclude_from %{_libdir}/discord/.*\\.s
+%global __provides_exclude_from %{_libdir}/discord-canary/.*\\.s
 
 Name:           discord-canary
 # Version managed by tito
