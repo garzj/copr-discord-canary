@@ -91,8 +91,10 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.metain
 %changelog
 * Wed Dec 11 2024 garzj <johannes@garz.dev> 0.0.537-1
 - Update to 0.0.537
+
 * Wed Dec 11 2024 garzj <johannes@garz.dev> 0.0.536-2
 - fix: discord lib path name (johannes@garz.dev)
+
 * Sun Dec 08 2024 garzj <johannes@garz.dev> 0.0.536-1
 - Fork https://github.com/rpmfusion/discord/tree/master, adapt for Discord Canary
 - Initial build at version 0.0.536
