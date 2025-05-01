@@ -7,7 +7,7 @@
 
 Name:           discord-canary
 # Version managed by tito
-Version:        0.0.666
+Version:        0.0.667
 # Release managed by tito
 Release:        1
 Summary:        All-in-one voice and text chat
@@ -89,6 +89,9 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.metain
 
 
 %changelog
+* Thu May 01 2025 garzj <pkg@garz.dev> 0.0.667-1
+- Update to 0.0.667
+
 * Wed Apr 30 2025 garzj <pkg@garz.dev> 0.0.666-1
 - Update to 0.0.666
 
