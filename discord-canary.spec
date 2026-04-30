@@ -41,6 +41,7 @@ Requires:       hicolor-icon-theme
 
 %if !0%{?el7}
 Recommends:     (libayatana-appindicator-gtk3%{_isa} if gtk3%{_isa})
+Recommends:     (libunity%{_isa} if gtk3%{_isa})
 Recommends:     google-noto-emoji-color-fonts
 Recommends:     libXScrnSaver
 %endif
@@ -61,14 +62,14 @@ mkdir -p %{buildroot}%{_metainfodir}/
 
 desktop-file-install                                  \
 --set-icon=%{name}                                    \
---set-key=Exec --set-value=%{_bindir}/DiscordCanary   \
+--set-key=Exec --set-value=%{_bindir}/discord-canary   \
 --remove-key=Path                                     \
 --delete-original                                     \
 --dir=%{buildroot}/%{_datadir}/applications           \
 discord-canary.desktop
 
 cp -r * %{buildroot}/%{_libdir}/discord-canary/
-ln -sf ../%{_lib}/discord-canary/wrapper.sh %{buildroot}/%{_bindir}/DiscordCanary
+ln -sf ../%{_lib}/discord-canary/wrapper.sh %{buildroot}/%{_bindir}/discord-canary
 install -p -D -m 644 discord.png \
         %{buildroot}%{_datadir}/icons/hicolor/256x256/apps/%{name}.png
 
@@ -82,7 +83,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.metain
 
 %files
 %{_libdir}/discord-canary/
-%{_bindir}/DiscordCanary
+%{_bindir}/discord-canary
 %{_datadir}/applications/discord-canary.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_metainfodir}/%{name}.metainfo.xml
