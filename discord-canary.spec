@@ -7,9 +7,9 @@
 
 Name:           discord-canary
 # Version managed by tito
-Version:        1.0.1000
+Version:        1.0.1008
 # Release managed by tito
-Release:        2
+Release:        1
 Summary:        All-in-one voice and text chat
 
 # License Information: https://bugzilla.rpmfusion.org/show_bug.cgi?id=4441#c14
@@ -90,6 +90,9 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.metain
 
 
 %changelog
+* Fri May 01 2026 garzj <pkg@garz.dev> 1.0.1008-1
+- Update to 1.0.1008
+
 * Thu Apr 30 2026 garzj <johannes@garz.dev> 1.0.1000-2
 - fix: new discord canary packaging format (johannes@garz.dev)
 
